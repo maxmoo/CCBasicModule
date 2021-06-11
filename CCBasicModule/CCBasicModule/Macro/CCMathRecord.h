@@ -6,6 +6,7 @@
 //
 
 /********************常用的数学函数****************************/
+/*
 1、 三角函数
 double sin (double);//正弦
 double cos (double);//余弦
@@ -48,3 +49,4 @@ rand()   //随机数
 fmax()/fmaxf()/fmaxl()//求最大
 fmin()/fminf()/fminl()//求最小
 round()/roundf()/roundl()//四舍五入
+*/

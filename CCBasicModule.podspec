@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/maxmoo/CCBasicModule"
   spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  spec.platform     = :ios, "8.0"
+  spec.platform     = :ios, "9.0"
   spec.author       = { "maxmoo" => "maxmoo@163.com" }
   spec.source       = { :git => "https://github.com/maxmoo/CCBasicModule.git", :tag => "#{spec.version}" }
   spec.source_files  = "CCBasicModule", "CCBasicModule/**/*.{h,m}"
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
   spec.framework  = "UIKit"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
-  spec.dependency 'YYKit'
-  spec.requires_arc = true
+  # spec.dependency 'YYKit'
+  # spec.requires_arc = true
 
 end
