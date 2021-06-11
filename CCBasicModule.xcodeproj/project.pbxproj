@@ -14,8 +14,8 @@
 		AAF6966726732C390068352E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF6966626732C390068352E /* Assets.xcassets */; };
 		AAF6966A26732C390068352E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF6966826732C390068352E /* LaunchScreen.storyboard */; };
 		AAF6966D26732C390068352E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF6966C26732C390068352E /* main.m */; };
-		AAF696A0267343E20068352E /* UIView+CCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF6969E267343E20068352E /* UIView+CCAdd.m */; };
-		AAF696A72673443C0068352E /* CCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF696A52673443C0068352E /* CCFileManager.m */; };
+		AAF696F0267369200068352E /* CCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF696E8267369200068352E /* CCFileManager.m */; };
+		AAF696F1267369200068352E /* UIView+CCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF696EC267369200068352E /* UIView+CCAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +31,12 @@
 		AAF6966926732C390068352E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAF6966B26732C390068352E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF6966C26732C390068352E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AAF69675267330E70068352E /* CCMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCMacro.h; sourceTree = "<group>"; };
-		AAF69699267343140068352E /* CCMathRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCMathRecord.h; sourceTree = "<group>"; };
-		AAF6969C267343E20068352E /* UIView+CCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CCAdd.h"; sourceTree = "<group>"; };
-		AAF6969E267343E20068352E /* UIView+CCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CCAdd.m"; sourceTree = "<group>"; };
-		AAF696A52673443C0068352E /* CCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFileManager.m; sourceTree = "<group>"; };
-		AAF696A62673443C0068352E /* CCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFileManager.h; sourceTree = "<group>"; };
+		AAF696E8267369200068352E /* CCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFileManager.m; sourceTree = "<group>"; };
+		AAF696E9267369200068352E /* CCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFileManager.h; sourceTree = "<group>"; };
+		AAF696EB267369200068352E /* UIView+CCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CCAdd.h"; sourceTree = "<group>"; };
+		AAF696EC267369200068352E /* UIView+CCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CCAdd.m"; sourceTree = "<group>"; };
+		AAF696EE267369200068352E /* CCMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMacro.h; sourceTree = "<group>"; };
+		AAF696EF267369200068352E /* CCMathRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMathRecord.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 		AAF6965926732C360068352E /* CCBasicModule */ = {
 			isa = PBXGroup;
 			children = (
-				AAF69674267330B40068352E /* CCBasicModule */,
+				AAF696E5267369200068352E /* Classes */,
 				AAF6965A26732C360068352E /* AppDelegate.h */,
 				AAF6965B26732C360068352E /* AppDelegate.m */,
 				AAF6965D26732C360068352E /* SceneDelegate.h */,
@@ -85,49 +85,49 @@
 			path = CCBasicModule;
 			sourceTree = "<group>";
 		};
-		AAF69674267330B40068352E /* CCBasicModule */ = {
+		AAF696E5267369200068352E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AAF696A3267344090068352E /* Tools */,
-				AAF6969B267343BA0068352E /* Category */,
-				AAF6969A267343AA0068352E /* Macro */,
+				AAF696E6267369200068352E /* Tools */,
+				AAF696EA267369200068352E /* Category */,
+				AAF696ED267369200068352E /* Macro */,
 			);
-			path = CCBasicModule;
-			sourceTree = "<group>";
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
-		AAF6969A267343AA0068352E /* Macro */ = {
+		AAF696E6267369200068352E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				AAF69675267330E70068352E /* CCMacro.h */,
-				AAF69699267343140068352E /* CCMathRecord.h */,
-			);
-			path = Macro;
-			sourceTree = "<group>";
-		};
-		AAF6969B267343BA0068352E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				AAF6969C267343E20068352E /* UIView+CCAdd.h */,
-				AAF6969E267343E20068352E /* UIView+CCAdd.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		AAF696A3267344090068352E /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				AAF696A42673443C0068352E /* FileManager */,
+				AAF696E7267369200068352E /* FileManager */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		AAF696A42673443C0068352E /* FileManager */ = {
+		AAF696E7267369200068352E /* FileManager */ = {
 			isa = PBXGroup;
 			children = (
-				AAF696A52673443C0068352E /* CCFileManager.m */,
-				AAF696A62673443C0068352E /* CCFileManager.h */,
+				AAF696E8267369200068352E /* CCFileManager.m */,
+				AAF696E9267369200068352E /* CCFileManager.h */,
 			);
 			path = FileManager;
+			sourceTree = "<group>";
+		};
+		AAF696EA267369200068352E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AAF696EB267369200068352E /* UIView+CCAdd.h */,
+				AAF696EC267369200068352E /* UIView+CCAdd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AAF696ED267369200068352E /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				AAF696EE267369200068352E /* CCMacro.h */,
+				AAF696EF267369200068352E /* CCMathRecord.h */,
+			);
+			path = Macro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF6966226732C360068352E /* ViewController.m in Sources */,
+				AAF696F0267369200068352E /* CCFileManager.m in Sources */,
 				AAF6965C26732C360068352E /* AppDelegate.m in Sources */,
 				AAF6966D26732C390068352E /* main.m in Sources */,
-				AAF696A0267343E20068352E /* UIView+CCAdd.m in Sources */,
-				AAF696A72673443C0068352E /* CCFileManager.m in Sources */,
+				AAF696F1267369200068352E /* UIView+CCAdd.m in Sources */,
 				AAF6965F26732C360068352E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
