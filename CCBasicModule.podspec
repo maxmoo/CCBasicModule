@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   # spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "Classes/**/*.h"
   # spec.resource  = "icon.png"
-  spec.resources = "Classes/**/*.{h,m}"
+  spec.resources = "Classes/*"
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
   spec.framework  = "UIKit"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
