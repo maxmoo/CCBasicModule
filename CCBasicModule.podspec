@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CCBasicModule"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of CCBasicModule."
   spec.description  = "CCBasicModule basic module"
   spec.homepage     = "https://github.com/maxmoo/CCBasicModule"
@@ -18,11 +18,11 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.author       = { "maxmoo" => "maxmoo@163.com" }
   spec.source       = { :git => "https://github.com/maxmoo/CCBasicModule.git", :tag => "#{spec.version}" }
-  spec.source_files  = "CCBasicModule", "Classes/**/*.{h,m}"
+  spec.source_files  = "Classes/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "Classes/**/*.h"
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  spec.resources = "Classes/**/*.{h,m}"
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
   spec.framework  = "UIKit"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
