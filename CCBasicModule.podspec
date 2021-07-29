@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'Tools' do |ss|
-    ss.source_files = 'Classes/Tools/*.{h,m}'
+    ss.source_files = 'Classes/Tools/**/*.{h,m}'
   end
 
 end
