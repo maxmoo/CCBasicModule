@@ -66,7 +66,7 @@ if (@available(iOS 11.0, *)) {\
 //RGBA
 #define kRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 // 随机色
-#define kRandomColor kRGB(arc4random()%256, arc4random()%256, arc4random()%256);
+#define kRandomColor kRGB(arc4random()%256, arc4random()%256, arc4random()%256)
 
 /***********************log*********************************/
 //Log
@@ -128,6 +128,8 @@ if (@available(iOS 11.0, *)) {\
     #endif
 #endif
 
+#define kWeakSelf __weak typeof(self) weakSelf = self;
+#define kStrongSelf __strong typeof(weakSelf) strongSelf = weakSelf;
 
 //存储对象
 #define UserDefaultSetObjectForKey(__VALUE__,__KEY__) \
@@ -147,8 +149,8 @@ if (@available(iOS 11.0, *)) {\
 }
 
 //
-#define KeyWindow ([UIApplication sharedApplication].keyWindow)
-#define AppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+#define kKeyWindow ([UIApplication sharedApplication].keyWindow)
+#define kAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 //----------------------快速查询一段代码的执行时间
 #define TICK NSDate *startTime = [NSDate date];
