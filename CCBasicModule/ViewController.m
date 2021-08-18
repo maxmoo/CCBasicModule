@@ -20,6 +20,7 @@
     
     self.view.backgroundColor = kRandomColor;
     
+    NSLog(@"tabbar height:%f",kTabbarHeight);
 }
 
 

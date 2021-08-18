@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CCBasicModule"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "A short description of CCBasicModule."
   spec.description  = "CCBasicModule basic module"
   spec.homepage     = "https://github.com/maxmoo/CCBasicModule"

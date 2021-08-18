@@ -18,8 +18,8 @@
 #define kScreenMaxLength (MAX(kScreenWidth, kScreenHeight))
 #define kScreenMinLength (MIN(kScreenWidth, kScreenHeight))
 //6为标准适配的,如果需要其他标准可以修改
-#define kScale_W(w) ((kScreenWidth)/414) * (w)
-#define kScale_H(h) (kScreenHeight/736) * (h)
+#define kScale_W(w) ((kScreenWidth)/414.0) * (w)
+#define kScale_H(h) (kScreenHeight/736.0) * (h)
 //状态栏
 #define kStatusBarHeight \
 ^(){\
@@ -41,8 +41,9 @@ if (@available(iOS 11.0, *)) {\
 }\
 }()
 
-#define kNavBarHeight (44)
-#define kNavBarBottom (kStatusBarHeight + 44)
+#define kNavBarHeight (44.0)
+#define kNavBarBottom (kStatusBarHeight + 44.0)
+#define kTabbarHeight (kIndicatorHeight + 49.0)
 
 /***********************判断设备*********************************/
 //判断是否为iPhone
@@ -66,7 +67,7 @@ if (@available(iOS 11.0, *)) {\
 //RGBA
 #define kRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 // 随机色
-#define kRandomColor kRGB(arc4random()%256, arc4random()%256, arc4random()%256)
+#define kRandomColor kRGB(arc4random()%256.0, arc4random()%256.0, arc4random()%256.0)
 
 /***********************log*********************************/
 //Log
