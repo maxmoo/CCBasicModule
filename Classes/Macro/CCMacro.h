@@ -67,7 +67,7 @@ if (@available(iOS 11.0, *)) {\
 //RGBA
 #define kRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 // 随机色
-#define kRandomColor kRGB(arc4random()%256.0, arc4random()%256.0, arc4random()%256.0)
+#define kRandomColor kRGB(arc4random()%256, arc4random()%256, arc4random()%256)
 
 /***********************log*********************************/
 //Log
